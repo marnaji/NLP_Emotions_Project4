@@ -30,3 +30,12 @@ The format of our dataset is a wide array of text samples and the emotions assoc
 
 ## Visualizations
 Display data into different emotions and visualize them by percentages.
+
+## Approaches: 
+ classic approach:  Analyze and study the data based on the NLP tool decision tree/ngram that would be the prediction model to predict sentiment based on the given comments. This is going to be our classical approach. Which will show accuracy of the model and f1. Visualization : association between words and sentiments, word frequency.
+
+ If it is possible (google Colab since it needs a large GPU to run) Train/fit a very small language model(BERT/T5) to learn the classification of sentiments using language models.
+
+Openai approach: using Openai API to create without training language Model to make predictions. 
+
+ Live Demo: Evaluation Testing the approaches live. User input → predict sentiments in a live mode and compare the performances. 
