@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Center the input form */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+}
+
+/* Style the input field */
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 600px;
+    margin: 10px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Style the emoji paragraph and make them larger */
+p {
+    font-size: 24px;
+}
+/* Style the sentiment response */
+#sentiment-response {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Style individual emojis */
+#joy-emoji {
+    color: #00ff00; /* Green for joy emoji */
+}
+
+#anger-emoji {
+    color: #ff0000; /* Red for anger emoji */
+}
+
+#fear-emoji {
+    color: #ff9900; /* Orange for fear emoji */
+}
+/*Style the response-text */
+#response-text {
+    font-size: 40px;
+    font-style: bold;
+}
