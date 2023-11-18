@@ -27,10 +27,10 @@ Our dataset contains a diverse collection of text samples paired with correspond
 !['DataDistribution'](/images/DataSet.png)
 
 ## Approaches: 
-**Classic approach**: Decision tree using TF-IDF Vectorizer
-**Fine Tuning**: BERT 
-**Pretrained Model** : OpenAI
-**Live Demo**
+* **Classic approach**: Decision tree using TF-IDF Vectorizer
+* **Fine Tuning**: BERT 
+* **Pretrained Model** : OpenAI
+* **Live Demo**
 
 ## Predictions 
 * Can OpenAI predict sentiment from user input?
@@ -45,15 +45,22 @@ Our dataset contains a diverse collection of text samples paired with correspond
 * Present the confusion matrix for all models.
 * Visualize the BERT Model's epoch versus average test loss.
 * Show the Classification Report for all models.
+-----
+
+**Decison Tree using TF-IDF Vectorizer Metrics**
 
 !['CFM DecisionTree'](/images/DT_confusion_matrix.png)
 
 !['ClassificationReportDT'](/images/DT_classification_report.png)
 
+---
+**BERT Model Metrics**
+
 !['Confusion MatrixBert'](/images/BertConsusionMatrix.png)
 
 !['ClassificationReportBert'](/images/BERTReport.png)
 
+--- 
 
 ## Report 
 **Decision Tree**:
@@ -69,18 +76,20 @@ Our dataset contains a diverse collection of text samples paired with correspond
 * Employing TF-IDF, it categorizes words and their significance in text, demonstrating the nuanced language learning capabilities of this model.
 * Considering all performance metrics, it is evident that this model is highly proficient in accurately predicting sentiments.
 
+Snippet of the Decision Tree
+
 ![Decision Tree Predictions](/images/Decision_tree_predictions.png)
 
 **BERT**:
-* BERT had a **highest accuracy score of 97%**
+* BERT had the **highest accuracy score of 97%**
 * **Average test loss** is about **0.11%**
 * Model demonstrates strong performance across various metrics.
-* Effectively classifies instances in fear, joy, and anger classes.
-* High precision, Recall, anf F1-Score across all classes.
-* Both macro-average and weighted-average metrics are 0.97 that , emphasizes consistency in model performance across all classes, considering both equal and weighted contributions.
+* Effectively classifies instances of fear, joy, and anger classes.
+* High precision, Recall, and F1-Score across all classes.
+* Both macro-average and weighted-average metrics are 0.97, that emphasizes consistency in model performance across all classes, considering both equal and weighted contributions.
 * After loss value at the end of each epoch converged to stable point we stopped training to avoid overfitting.
-* From First epoch to the second epoch there is a steep line, and that is becuase our model have not been trained yet.
- 
+* From First epoch to the second epoch there is a steep line, and that is becuase our model has not been trained yet.
+
 **Summary**:
 The model performs exceptionally well, achieving high precision, recall, and F1-scores across all classes, resulting in an impressive overall accuracy of 97%. The macro and weighted averages also reflect consistent and balanced performance across the classes.
 
@@ -94,12 +103,13 @@ The model was run both without prompt engineering and with prompt engineering.
     * Generally higher in the second report, particularly for "Joy" and "Fear."
 * F1-Score:
     * Slightly higher in the second report for all classes.
-* F1-Score:
-    * Slightly higher in the second report for all classes.
+
 
 **Summary**: 
 The prompt engineering classification report generally exhibits better performance metrics, with higher precision, recall, and F1-scores, resulting in a higher overall accuracy. The improvements are particularly notable for the "Joy" and "Fear" classes.
 
+OpenAI Performance Without Prompt Engineering 
 !['OpenAIPrompt'](/images/AIpropmtEngineering.png)
 
+OpenAI Performance With Prompt Engineering
 !['OpenAINoPrompt'](/images/NopromptEngineerAI.png)
