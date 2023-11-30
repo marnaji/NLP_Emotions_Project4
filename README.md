@@ -8,7 +8,7 @@
 * Maryam Najiarani
 
 ## Project Overview
-The Emotion Classification dataset is designed to facilitate research and exploration in natural language processing (NLP) and emotion analysis. It contains diverse text samples, each labeled with the specific emotion it conveys. The dataset covers a broad spectrum of emotions, including joy, enthusiasm, frustration, sorrow, and more.
+The Emotion Classification dataset is designed to facilitate research and exploration in natural language processing (NLP) and emotion analysis. It contains diverse text samples, each labeled with the specific emotion it conveys. The dataset covers a broad spectrum of emotions, including joy, anger,and fear.
 
 The purpose of this data is to construct and train a model capable of analyzing text samples to detect and categorize various emotions. These categorized emotions can then be applied in numerous scenarios outlined below.
 
